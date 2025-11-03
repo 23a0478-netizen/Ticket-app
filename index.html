@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>チケット申込フォーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>チケット申し込み</h1>
+  <form id="ticketForm">
+    <label>代表者名</label>
+    <input type="text" id="name" required>
+    
+    <label>人数</label>
+    <input type="number" id="count" min="1" value="1" required>
+    
+    <label>チケット種類</label><br>
+    <input type="checkbox" id="A" value="A"><label for="A">Aチケット</label>
+    <input type="checkbox" id="B" value="B"><label for="B">Bチケット</label>
+    
+    <button type="submit">申し込み</button>
+  </form>
+
+  <script src="ticket.js"></script>
+</body>
+</html>
